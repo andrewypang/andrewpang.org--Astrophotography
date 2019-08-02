@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="resources/bootstrap-4.3.1-dist/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="css/main.css">
-      <link rel="shortcut icon" type="image/png" href="resources/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="resources/favicon.png">
   <script src="https://kit.fontawesome.com/06a3e9347a.js"></script>
   <title>Astrophotography - Andrew Pang</title>
 </head>
@@ -24,88 +24,87 @@
     </div>
   </div>
 
+  <!-- Main content like the top-nav, side-nav, and the gallery -->
   <div class="container-fluid">
     <div class="row">
       <!-- The Side Nav -->
-      <div id="sidebar" class="col pr-0 collapse show">
-        <nav class="nav flex-column h-100">
-          <nav class="nav justify-content-between sticky-top">
-            <!-- Photo Index - Side Nav -->
-            <div class="nav__list w-100">
+      <div id="side-nav-container" class="col-4 pr-0 collapse show">
+        <nav class="side-nav justify-content-between sticky-top">
+          <!-- The Side Nav - Photo Index like HOME, THE MOON, THE MILKYWAY, ETC -->
+          <ul class="side-nav__list w-100">
 
-              <!-- nav item -->
-              <div class="nav__item">
-                <a class="nav-link nav-main" href="#">Home</a>
-              </div>
+            <!-- Nav Item -->
+            <li class="side-nav__list__item">
+              <a class="side-nav__link side-nav__link--main" href="#">Home</a>
+            </li>
 
-              <!-- nav item -->
-              <div class="nav__item">
-                <a class="nav-link nav-main" href="#the-moon">The Moon</a>
-                <nav class="nav flex-row">
-                  <a class="nav-link nav-sub" href="#the-moon-close-ups">Close Ups</a>
-                  <a class="nav-link nav-sub" href="moon-lapse.html" target="_blank">Moon Lapse<i class="icon fas fa-history"></i></a>
-                </nav>
-              </div>
-
-              <!-- nav item -->
-              <div class="nav__item">
-                <a class="nav-link nav-main" href="#milky-way">The Milky Way</a>
-              </div>
-
-              <!-- nav item -->
-              <div class="nav__item">
-                <a class="nav-link nav-main" href="#solar-eclipse">2017 Solar Eclipse</a>
-              </div>
-
-              <div class="nav__item">
-                <!-- nav item -->
-                <a class="nav-link nav-main" href="#solar-system">Solar System</a>
-                <nav class="nav flex-row">
-                  <a class="nav-link nav-sub" href="#the-sun">The Sun</a>
-                  <a class="nav-link nav-sub" href="#venus">Venus</a>
-                  <a class="nav-link nav-sub" href="#mars">Mars</a>
-                  <a class="nav-link nav-sub" href="#jupiter">Jupiter</a>
-                  <a class="nav-link nav-sub" href="#saturn">Saturn</a>
-                  <a class="nav-link nav-sub" href="#uranus">Uranus</a>
-                </nav>
-              </div>
-
-              <!-- nav item -->
-              <div class="nav__item">
-                <a class="nav-link  nav-main" href="#deep-space">Deep Space</a>
-                <nav class="nav flex-row">
-                  <a class="nav-link nav-sub" href="#m2">M2</a>
-                  <a class="nav-link nav-sub" href="#m13">M13</a>
-                  <a class="nav-link nav-sub" href="#m22">M22</a>
-                  <a class="nav-link nav-sub" href="#m27">M27</a>
-                  <a class="nav-link nav-sub" href="#m42">M42</a>
-                  <a class="nav-link nav-sub" href="#m45">M45</a>
-                  <a class="nav-link nav-sub" href="#m57">M57</a>
-                  <a class="nav-link nav-sub" href="#andromeda">Andromeda</a>
-
-                </nav>
-              </div>
-
-              <!-- nav item -->
-              <div class="nav__item">
-                <a class="nav-link  nav-main" href="#star-fields">Star Fields</a>
-              </div>
-
-            </div>
-            <!-- Footer - Side Nav -->
-            <div class="w-100 nav-side-footer text-center" style="font-size: 1.4rem;">
-              <div class="my-3">
-                <a class="nav-link py-0" href="extra.html" target="_blank" style="font-size: 1.4rem;">EXTRA</a>
-                <a class="nav-link py-0 ml-5" href="setup.html" target="_blank" style="font-size: 1.4rem;">MY SETUP</a>
-                <hr>
-              </div>
-              <a href="https://www.instagram.com/space_voyage/" target="_blank"><span class="icon mx-3 fab fa-instagram"
-                  style="font-size: 2rem;"></span></a>
-              <a href="mailto:andrew.y.pang@gmail.com" target="_blank"><span class="icon mx-3 fas fa-envelope"
-                  style="font-size: 2rem;"></span></a>
+            <!-- Nav Item -->
+            <div class="side-nav__list__item">
+              <a class="side-nav__link side-nav__link--main" href="#the-moon">The Moon</a>
+              <nav class="nav flex-row">
+                <a class="side-nav__link side-nav__link--sub" href="#the-moon-close-ups">Close Ups</a>
+                <a class="side-nav__link side-nav__link--sub" href="moon-lapse.html" target="_blank">Moon Lapse<i class="side-nav__icon fas fa-history"></i></a>
+              </nav>
             </div>
 
-          </nav>
+            <!-- Nav Item -->
+            <div class="side-nav__list__item">
+              <a class="side-nav__link side-nav__link--main" href="#milky-way">The Milky Way</a>
+            </div>
+
+            <!-- Nav Item -->
+            <div class="side-nav__list__item">
+              <a class="side-nav__link side-nav__link--main" href="#solar-eclipse">2017 Solar Eclipse</a>
+            </div>
+
+            <div class="side-nav__list__item">
+              <!-- Nav Item -->
+              <a class="side-nav__link side-nav__link--main" href="#solar-system">Solar System</a>
+              <nav class="nav flex-row">
+                <a class="side-nav__link side-nav__link--sub" href="#the-sun">The Sun</a>
+                <a class="side-nav__link side-nav__link--sub" href="#venus">Venus</a>
+                <a class="side-nav__link side-nav__link--sub" href="#mars">Mars</a>
+                <a class="side-nav__link side-nav__link--sub" href="#jupiter">Jupiter</a>
+                <a class="side-nav__link side-nav__link--sub" href="#saturn">Saturn</a>
+                <a class="side-nav__link side-nav__link--sub" href="#uranus">Uranus</a>
+              </nav>
+            </div>
+
+            <!-- Nav Item -->
+            <div class="side-nav__list__item">
+              <a class="side-nav__link  side-nav__link--main" href="#deep-space">Deep Space</a>
+              <nav class="nav flex-row">
+                <a class="side-nav__link side-nav__link--sub" href="#m2">M2</a>
+                <a class="side-nav__link side-nav__link--sub" href="#m13">M13</a>
+                <a class="side-nav__link side-nav__link--sub" href="#m22">M22</a>
+                <a class="side-nav__link side-nav__link--sub" href="#m27">M27</a>
+                <a class="side-nav__link side-nav__link--sub" href="#m42">M42</a>
+                <a class="side-nav__link side-nav__link--sub" href="#m45">M45</a>
+                <a class="side-nav__link side-nav__link--sub" href="#m57">M57</a>
+                <a class="side-nav__link side-nav__link--sub" href="#andromeda">Andromeda</a>
+
+              </nav>
+            </div>
+
+            <!-- Nav Item -->
+            <div class="side-nav__list__item">
+              <a class="side-nav__link  side-nav__link--main" href="#star-fields">Star Fields</a>
+            </div>
+
+          </ul>
+          <!-- Footer - Side Nav -->
+          <div class="side-nav__footer w-100 text-center">
+            <div class="">
+              <a class="side-nav__link side-nav__link--main py-0" href="extra.html" target="_blank">EXTRA</a>
+              <a class="side-nav__link side-nav__link--main py-0 ml-5" href="setup.html" target="_blank">MY SETUP</a>
+              <hr>
+            </div>
+            <a class="side-nav__link" href="https://www.instagram.com/space_voyage/" target="_blank"><span class="side-nav__icon mx-3 fab fa-instagram"
+                style="font-size: 2rem;"></span></a>
+            <a class="side-nav__link" href="mailto:andrew.y.pang@gmail.com" target="_blank"><span class="side-nav__icon mx-3 fas fa-envelope"
+                style="font-size: 2rem;"></span></a>
+          </div>
+
         </nav>
 
       </div>
@@ -113,8 +112,8 @@
       <div class="col p-0">
         <!-- The Top Nav -->
         <div class="nav-top d-flex flex-row justify-content-between sticky-top">
-          <a class="" type="button" data-toggle="collapse" href="#sidebar" aria-controls="navbarToggleExternalContent"
-            aria-expanded="true" aria-label="Toggle navigation">
+          <a class="" type="button" data-toggle="collapse" href="#side-nav-container"
+            aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
             <span id="toggle-side" class="icon fas fa-ellipsis-h"></span>
           </a>
           <a href="#">
