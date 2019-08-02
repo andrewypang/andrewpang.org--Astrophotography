@@ -9,69 +9,70 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="resources/bootstrap-4.3.1-dist/css/bootstrap.min.css">
 
-  <!-- <link rel="stylesheet" href="css/bootstrap4-harbor.min.css"> -->
-
   <link rel="stylesheet" href="css/main.css">
-      <link rel="shortcut icon" type="image/png" href="resources/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="resources/favicon.png">
   <script src="https://kit.fontawesome.com/06a3e9347a.js"></script>
-  <title>Astrophotography | Extras</title>
+  <title>Astrophotography | Andrew Pang</title>
 </head>
 
 <body>
+  <!-- The Jumbotron Headline -->
   <div class="jumbotron jumbotron-fluid m-0">
     <div class="container-fluid">
-      <h1 class="heading-primary jumbotron__heading display-4">Astrophotography</h1>
-      <p class="lead jumbotron__heading">A Space Odyssey</p>
+      <h1 class="jumbotron__heading jumbotron__heading--main heading-primary">Astrophotography</h1>
+      <p class="jumbotron__heading">A Space Odyssey</p>
     </div>
   </div>
 
+  <!-- Main content like the top-nav, side-nav, and the gallery -->
   <div class="container-fluid">
     <div class="row">
       <!-- The Side Nav -->
-      <div id="sidebar" class="col-4 pr-0 collapse show">
-        <nav class="nav flex-column h-100">
-          <nav class="nav justify-content-between sticky-top">
-            <!-- Photo Index - Side Nav -->
-            <div class="nav__list w-100">
+      <div id="side-nav-container" class="pr-0 collapse">
+        <nav class="side-nav justify-content-between">
+          <!-- The Side Nav - Photo Index like HOME, THE MOON, THE MILKYWAY, ETC -->
+          <ul class="side-nav__list w-100">
 
-              <!-- nav item -->
-              <div class="nav__item">
-                <a class="nav-link nav-main" href="https://andrewpang.photography/">Home</a>
-              </div>
+            <!-- Nav Item -->
+            <li class="side-nav__list__item">
+              <a class="side-nav__link side-nav__link--main" href="https://astrophotography.andrewpang.org">Home</a>
+            </li>
 
-              <!-- nav item -->
-              <div class="nav__item">
-                <a class="nav-link nav-main" href="#meteorite">Meteorite</a>
-              </div>
+            <!-- Nav Item -->
+            <li class="side-nav__list__item">
+              <a class="side-nav__link side-nav__link--main" href="#meteorite">Meteorite</a>
+            </li>
 
+          </ul>
+          <!-- Footer - Side Nav -->
+          <div class="side-nav__footer w-100 text-center">
+            <div class="">
+              <a class="side-nav__link side-nav__link--main py-0" href="extra.html" target="_blank">EXTRA</a>
+              <a class="side-nav__link side-nav__link--main py-0 ml-5" href="setup.html" target="_blank">MY SETUP</a>
+              <hr>
             </div>
-            <!-- Footer - Side Nav -->
-            <div class="w-100 nav-side-footer text-center" style="font-size: 1.4rem;">
-              <div class="my-3">
-                <a class="nav-link py-0" href="extra.html" target="_blank" style="font-size: 1.4rem;">EXTRA</a>
-                <a class="nav-link py-0 ml-5" href="setup.html" target="_blank" style="font-size: 1.4rem;">MY SETUP</a>
-                <hr>
-              </div>
-              <a href="https://www.instagram.com/space_voyage/" target="_blank"><span class="icon mx-3 fab fa-instagram"
-                  style="font-size: 2rem;"></span></a>
-              <a href="mailto:andrew.y.pang@gmail.com" target="_blank"><span class="icon mx-3 fas fa-envelope"
-                  style="font-size: 2rem;"></span></a>
-            </div>
+            <a class="side-nav__link" href="https://www.instagram.com/space_voyage/" target="_blank"><span
+                class="nav__icon mx-3 fab fa-instagram" style="font-size: 2rem;"></span></a>
+            <a class="side-nav__link" href="mailto:andrew.y.pang@gmail.com" target="_blank"><span
+                class="nav__icon mx-3 fas fa-envelope" style="font-size: 2rem;"></span></a>
+          </div>
 
-          </nav>
         </nav>
+
+
+
 
       </div>
 
       <div class="col p-0">
         <!-- The Top Nav -->
-        <div class="nav-top d-flex flex-row justify-content-between sticky-top">
-          <a class="" type="button" data-toggle="collapse" href="#sidebar" aria-controls="navbarToggleExternalContent"
-            aria-expanded="true" aria-label="Toggle navigation">
-            <span id="toggle-side" class="icon fas fa-ellipsis-h"></span>
+        <div class="top-nav d-flex flex-row justify-content-between sticky-top">
+          <a class="" type="button" data-toggle="collapse" href="#side-nav-container"
+            aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
+            <span id="toggle-side" class="nav__icon fas fa-ellipsis-h"></span>
           </a>
           <a href="#">
-            <i class="icon fas fa-angle-up"></i>
+            <span class="nav__icon fas fa-angle-up"></span>
           </a>
         </div>
 
@@ -138,7 +139,9 @@
           </div>
           <!-- END OF CONTAINER -->
 
-          
+
+
+        </div>
 
       </div>
 
