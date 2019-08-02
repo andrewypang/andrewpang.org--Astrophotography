@@ -247,6 +247,10 @@ body {
   font-size: 1.6rem;
 }
 
+.icon:hover {
+  color: var(--gray, #9E9E9E);
+}
+
 .jumbotron {
   background-image: url(../resources/home-banner.jpg), -webkit-gradient(linear, left top, left bottom, from(black), to(black));
   background-image: url(../resources/home-banner.jpg), linear-gradient(black, black);
