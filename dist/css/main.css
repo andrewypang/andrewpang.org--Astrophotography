@@ -251,12 +251,33 @@ body {
   background-image: url(../resources/home-banner.jpg), -webkit-gradient(linear, left top, left bottom, from(black), to(black));
   background-image: url(../resources/home-banner.jpg), linear-gradient(black, black);
   background-size: cover;
-  background-position: 0% 55%;
+  background-position: 0% 50%;
 }
 
 .jumbotron__heading {
   color: #fff;
   padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .jumbotron__heading--main {
+    font-size: 2rem;
+  }
+  .jumbotron__heading--sub {
+    font-size: 1.2rem;
+  }
+}
+
+#sidebar {
+  max-width: 40rem;
+}
+
+@media only screen and (max-width: 350px) {
+  #sidebar {
+    background-color: red;
+    position: absolute;
+    z-index: 1020;
+  }
 }
 
 .nav {
